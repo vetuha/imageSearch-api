@@ -1,7 +1,6 @@
 {
   "name": "imagesearch",
   "version": "1.0.0",
-  "description": "",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -10,6 +9,19 @@
   "author": "vetuha",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.14.0"
-  }
+    "bing.search": "^1.0.1",
+    "express": "^4.14.0",
+    "mongodb": "^2.2.5",
+    "pug": "^2.0.0-beta4"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vetuha/imageSearch-api.git"
+  },
+  "bugs": {
+    "url": "https://github.com/vetuha/imageSearch-api/issues"
+  },
+  "homepage": "https://github.com/vetuha/imageSearch-api#readme",
+  "description": ""
 }

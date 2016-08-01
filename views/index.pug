@@ -1,0 +1,27 @@
+html(lang="en")
+    head
+        title Image Search Abstraction Layer API
+        link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css")
+body
+    div(class="container-fluid")
+        h1(class="header")
+        FreeCodeCamp API: Image Search Abstraction Layer
+        blockquote
+            p User stories:
+                ol
+                    li I can get the image URLs, alt text and page urls for a set of images relating to a given search string.
+                    li I can paginate through the responses by adding a ?offset=2 parameter to the URL.
+                    li I can get a list of the most recently submitted search strings.
+        
+        h3 Example query usage:
+        code.
+            https://sheltered-falls-57192.herokuapp.com/api/imagesearch/big%20house?offset=2
+        br
+        code.
+            https://sheltered-falls-57192.herokuapp.com/api/latest/imagesearch/
+        h3 Example query output:
+        code.
+            [{"url":"http://1.bp.blogspot.com/_TVKmSin8VgU/TGahfFtwCMI/AAAAAAAAAW4/9j0qXCP834g/s1600/BigHouseBlueSky.jpg","snippet":"Home Design: Big House","thumbnail":"http://ts4.mm.bing.net/th?id=OIP.M13f53fc48813f068c6ed770c056c9205o0&pid=15.1","context":"http://elhomedesign.blogspot.com/2010/12/big-house.html"},{"url":"http://1.bp.blogspot.com/-ZcZ0pkLNkto/Th3HdBfVVOI/AAAAAAAABXA/ll8Hr4b0Ym8/s1600/luxury-big-house-design2.JPG","snippet":"Big House Design - Modern Home Minimalist | Minimalist Home Dezine","thumbnail":"http://ts1.mm.bing.net/th?id=OIP.Mdb78c7ac0946b73e1528ba2baf5785d3H0&pid=15.1","context":"http://minimalisthomedezine.blogspot.com/2011/07/big-house-design-modern-home-minimalist.html"}]
+        h3 Example latest output:
+        code.
+            [{"term":"big house","when":"8/1/2016, 11:29:12 AM"},{"term":"lolcats funny","when":"8/1/2016, 11:23:40 AM"}]
